@@ -1,7 +1,7 @@
-## Airbnb-Clone-Project
+# Airbnb-Clone-Project
 
 ### 🧑‍🤝‍🧑 Team Roles<br>
-🧠 Business Analyst (BA)<br>
+`🧠 Business Analyst (BA)`<br>
 The Business Analyst serves as the bridge between the client’s needs and the development team’s execution. They delve into the customer's workflows and analyze stakeholder feedback to translate abstract product ideas into tangible requirements. Their deep understanding of business processes ensures that the software product delivers maximum business value. 
 ITRex
 
@@ -33,3 +33,92 @@ DevOps Engineers bridge the gap between development and operations. They automat
 The Test Automation Engineer is instrumental in enhancing software quality and efficiency by automating repetitive testing tasks. They design, develop, and maintain automated test scripts, enabling continuous and reliable feedback on application performance without human intervention.
 
 ***
+
+Absolutely! Here's a polished **Technology Stack** section in markdown, following best practices and your formatting preferences (line breaks, bold text, *italics*, and clear structure):
+
+---
+
+## ⚙️ Technology Stack
+
+### 🐍 **Django**
+
+> *A high-level Python web framework used for rapid development and clean, pragmatic design.*
+
+* Powers the core of the backend logic
+* Supports creation of RESTful APIs
+* Handles user authentication, property listing, and booking logic
+
+---
+
+### 🧩 **Django REST Framework (DRF)**
+
+> *A powerful toolkit for building Web APIs with Django.*
+
+* Enables serialization, authentication, and permissions
+* Simplifies CRUD operations on user, property, booking, and review data
+* Supports API versioning and documentation via OpenAPI
+
+---
+
+### 🐘 **PostgreSQL**
+
+> *A powerful, open-source object-relational database system.*
+
+* Stores user, property, booking, payment, and review data
+* Enables complex queries and relationships
+* Supports indexing and optimization for performance
+
+---
+
+### 🔎 **GraphQL**
+
+> *A query language for APIs that gives clients the power to ask for exactly what they need.*
+
+* Offers flexible and efficient data retrieval
+* Reduces over-fetching and under-fetching of data
+* Complements the RESTful API for more advanced queries
+
+---
+
+### 🐇 **Celery**
+
+> *An asynchronous task queue/job queue based on distributed message passing.*
+
+* Handles background tasks such as:
+
+  * Sending email notifications
+  * Processing payments
+  * Scheduling tasks
+* Ensures smooth, non-blocking user experiences
+
+---
+
+### 🧠 **Redis**
+
+> *An in-memory data structure store, used as a database, cache, and message broker.*
+
+* Implements caching for frequently accessed data
+* Enhances performance and reduces database load
+* Manages Celery task queues efficiently
+
+---
+
+### 🐳 **Docker**
+
+> *A platform for developing, shipping, and running applications in containers.*
+
+* Ensures consistency across development and production environments
+* Simplifies dependency management and service orchestration
+* Speeds up onboarding and deployment processes
+
+---
+
+### 🔁 **CI/CD Pipelines**
+
+> *Automated workflows for testing, building, and deploying code.*
+
+* Enables continuous integration and delivery of updates
+* Reduces manual effort and risk of errors during deployments
+* Promotes agile and DevOps practices for faster iteration
+
+---
