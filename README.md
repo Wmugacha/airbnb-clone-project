@@ -264,3 +264,27 @@ This includes type checking, field restrictions, and escaping user inputs.
 
 ---
 ---
+
+## ⚙️ CI/CD Pipeline
+
+**CI/CD** stands for **Continuous Integration** and **Continuous Deployment** — a modern DevOps practice that automates the process of testing, building, and deploying code. It ensures that new code changes are safely integrated into the main branch and deployed without manual intervention.
+
+In this project, CI/CD pipelines help us:
+
+* Automatically run tests whenever new code is pushed
+* Ensure the backend remains stable and bug-free
+* Seamlessly deploy updates to production or staging environments
+* Catch errors early and reduce downtime
+
+---
+
+### 🛠️ Tools Used
+
+* **GitHub Actions**: Automates testing, linting, and deployment workflows on every pull request or push to main.
+* **Docker**: Containerizes the backend for consistent builds across all environments.
+* **Docker Hub / GitHub Container Registry**: Stores and distributes Docker images for deployment.
+* **Heroku / AWS / DigitalOcean** *(optional)*: Could be used as target platforms for automated deployment.
+
+> 🚀 *With CI/CD, we ship faster, break less, and sleep better at night.*
+
+---
