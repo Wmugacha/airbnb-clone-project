@@ -1,8 +1,7 @@
 ## Airbnb-Clone-Project
 
-**Bold text**
-`🧑‍🤝‍🧑 Team Roles`
-🧠 Business Analyst (BA)
+`🧑‍🤝‍🧑 Team Roles`<br>
+🧠 Business Analyst (BA)<br>
 The Business Analyst serves as the bridge between the client’s needs and the development team’s execution. They delve into the customer's workflows and analyze stakeholder feedback to translate abstract product ideas into tangible requirements. Their deep understanding of business processes ensures that the software product delivers maximum business value. 
 ITRex
 
@@ -34,4 +33,3 @@ DevOps Engineers bridge the gap between development and operations. They automat
 The Test Automation Engineer is instrumental in enhancing software quality and efficiency by automating repetitive testing tasks. They design, develop, and maintain automated test scripts, enabling continuous and reliable feedback on application performance without human intervention.
 
 ***
-<hr>
