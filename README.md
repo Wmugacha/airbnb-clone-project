@@ -211,7 +211,6 @@ Implements indexing and caching strategies to boost performance.
 By reducing response times and server load, it supports a seamless user experience even as the data grows.
 
 ---
----
 
 ## `🔐 API Security`
 
@@ -263,7 +262,6 @@ This includes type checking, field restrictions, and escaping user inputs.
 > 🧼 *Why it matters:* Proper validation stops attackers from injecting malicious code into the system.
 
 ---
----
 
 ## ⚙️ CI/CD Pipeline
 
@@ -288,3 +286,5 @@ In this project, CI/CD pipelines help us:
 > 🚀 *With CI/CD, we ship faster, break less, and sleep better at night.*
 
 ---
+
+#### `Author: Wilfred Mugacha`
