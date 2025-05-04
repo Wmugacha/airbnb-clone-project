@@ -44,81 +44,31 @@ Absolutely! Here's a polished **Technology Stack** section in markdown, followin
 
 > *A high-level Python web framework used for rapid development and clean, pragmatic design.*
 
-* Powers the core of the backend logic
-* Supports creation of RESTful APIs
-* Handles user authentication, property listing, and booking logic
-
----
 
 ### 🧩 **Django REST Framework (DRF)**
 
 > *A powerful toolkit for building Web APIs with Django.*
 
-* Enables serialization, authentication, and permissions
-* Simplifies CRUD operations on user, property, booking, and review data
-* Supports API versioning and documentation via OpenAPI
-
----
-
 ### 🐘 **PostgreSQL**
 
 > *A powerful, open-source object-relational database system.*
-
-* Stores user, property, booking, payment, and review data
-* Enables complex queries and relationships
-* Supports indexing and optimization for performance
-
----
 
 ### 🔎 **GraphQL**
 
 > *A query language for APIs that gives clients the power to ask for exactly what they need.*
 
-* Offers flexible and efficient data retrieval
-* Reduces over-fetching and under-fetching of data
-* Complements the RESTful API for more advanced queries
-
----
-
 ### 🐇 **Celery**
 
-> *An asynchronous task queue/job queue based on distributed message passing.*
-
-* Handles background tasks such as:
-
-  * Sending email notifications
-  * Processing payments
-  * Scheduling tasks
-* Ensures smooth, non-blocking user experiences
-
----
+> *For handling asynchronous tasks such as sending notifications or processing payments.*
 
 ### 🧠 **Redis**
 
 > *An in-memory data structure store, used as a database, cache, and message broker.*
 
-* Implements caching for frequently accessed data
-* Enhances performance and reduces database load
-* Manages Celery task queues efficiently
-
----
-
 ### 🐳 **Docker**
 
 > *A platform for developing, shipping, and running applications in containers.*
 
-* Ensures consistency across development and production environments
-* Simplifies dependency management and service orchestration
-* Speeds up onboarding and deployment processes
-
----
-
 ### 🔁 **CI/CD Pipelines**
 
 > *Automated workflows for testing, building, and deploying code.*
-
-* Enables continuous integration and delivery of updates
-* Reduces manual effort and risk of errors during deployments
-* Promotes agile and DevOps practices for faster iteration
-
----
