@@ -1,6 +1,6 @@
 # Airbnb-Clone-Project
 
-### 🧑‍🤝‍🧑 Team Roles<br>
+## `🧑‍🤝‍🧑 Team Roles`<br>
 `🧠 Business Analyst (BA)`<br>
 The Business Analyst serves as the bridge between the client’s needs and the development team’s execution. They delve into the customer's workflows and analyze stakeholder feedback to translate abstract product ideas into tangible requirements. Their deep understanding of business processes ensures that the software product delivers maximum business value. 
 ITRex
@@ -32,13 +32,9 @@ DevOps Engineers bridge the gap between development and operations. They automat
 `🤖 Test Automation Engineer`<br>
 The Test Automation Engineer is instrumental in enhancing software quality and efficiency by automating repetitive testing tasks. They design, develop, and maintain automated test scripts, enabling continuous and reliable feedback on application performance without human intervention.
 
-***
-
-Absolutely! Here's a polished **Technology Stack** section in markdown, following best practices and your formatting preferences (line breaks, bold text, *italics*, and clear structure):
-
 ---
 
-## ⚙️ Technology Stack
+## `⚙️ Technology Stack`
 
 ### 🐍 **Django**
 
@@ -72,3 +68,118 @@ Absolutely! Here's a polished **Technology Stack** section in markdown, followin
 ### 🔁 **CI/CD Pipelines**
 
 > *Automated workflows for testing, building, and deploying code.*
+
+---
+
+## `🗃️ Database Design`
+
+Below are the core entities in the Airbnb Clone backend and how they relate to each other:
+
+---
+
+### 👤 **User**
+
+Represents a person using the platform (either a host or a guest).
+
+**Key Fields:**
+
+* `id` – Unique identifier
+* `name` – Full name of the user
+* `email` – Used for login and communication
+* `password_hash` – Secured user password
+* `is_host` – Boolean to indicate if the user can list properties
+
+**Relationships:**
+
+* A **user** can create multiple **properties** *(if they're a host)*
+* A **user** can make multiple **bookings**
+* A **user** can leave **reviews** for properties they've booked
+
+---
+
+### 🏠 **Property**
+
+Represents a listing available for booking.
+
+**Key Fields:**
+
+* `id` – Unique property ID
+* `title` – Name or title of the property
+* `description` – Details about the property
+* `location` – Address or geographic location
+* `host_id` – References the `User` who owns the property
+
+**Relationships:**
+
+* A **property** is owned by one **user** (host)
+* A **property** can have multiple **bookings**
+* A **property** can receive multiple **reviews**
+
+---
+
+### 📅 **Booking**
+
+Represents a reservation made by a user for a property.
+
+**Key Fields:**
+
+* `id` – Booking ID
+* `user_id` – References the guest (User)
+* `property_id` – References the booked Property
+* `start_date` – Check-in date
+* `end_date` – Check-out date
+
+**Relationships:**
+
+* A **booking** is made by one **user**
+* A **booking** is linked to one **property**
+* A **booking** can be associated with one **payment**
+
+---
+
+### 💳 **Payment**
+
+Represents a transaction for a booking.
+
+**Key Fields:**
+
+* `id` – Payment ID
+* `booking_id` – References the associated booking
+* `amount` – Total payment amount
+* `payment_method` – e.g., card, PayPal
+* `status` – e.g., pending, completed, failed
+
+**Relationships:**
+
+* A **payment** belongs to one **booking**
+
+---
+
+### ✍️ **Review**
+
+Represents feedback given by a guest after a stay.
+
+**Key Fields:**
+
+* `id` – Review ID
+* `user_id` – Guest who wrote the review
+* `property_id` – Property being reviewed
+* `rating` – Numeric rating (e.g., 1–5)
+* `comment` – Text review content
+
+**Relationships:**
+
+* A **review** is written by one **user**
+* A **review** belongs to one **property**
+
+---
+
+### 🔁 Summary of Relationships
+
+* **User** ⟶ owns → **Properties**
+* **User** ⟶ makes → **Bookings**
+* **User** ⟶ writes → **Reviews**
+* **Property** ⟶ has → **Bookings**, **Reviews**
+* **Booking** ⟶ triggers → **Payment**
+
+---
