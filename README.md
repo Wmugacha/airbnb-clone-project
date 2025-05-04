@@ -1,6 +1,6 @@
 ## Airbnb-Clone-Project
 
-#### 🧑‍🤝‍🧑 Team Roles <br>
+### 🧑‍🤝‍🧑 Team Roles<br>
 🧠 Business Analyst (BA)<br>
 The Business Analyst serves as the bridge between the client’s needs and the development team’s execution. They delve into the customer's workflows and analyze stakeholder feedback to translate abstract product ideas into tangible requirements. Their deep understanding of business processes ensures that the software product delivers maximum business value. 
 ITRex
