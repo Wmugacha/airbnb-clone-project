@@ -73,10 +73,6 @@ The Test Automation Engineer is instrumental in enhancing software quality and e
 
 ## `🗃️ Database Design`
 
-Below are the core entities in the Airbnb Clone backend and how they relate to each other:
-
----
-
 ### 👤 **User**
 
 Represents a person using the platform (either a host or a guest).
@@ -183,3 +179,34 @@ Represents feedback given by a guest after a stay.
 * **Booking** ⟶ triggers → **Payment**
 
 ---
+
+## `🧩 Feature Breakdown`
+This section highlights the core features of the Airbnb Clone Backend and how each contributes to the overall functionality of the platform.
+
+**👤 User Management**
+Handles user registration, login, and profile management.
+This feature ensures that users (both guests and hosts) can securely access the platform, manage their details, and perform actions relevant to their role.
+
+**🏠 Property Management**
+Allows hosts to create, update, retrieve, and delete property listings.
+This feature makes it possible for users to showcase rental properties with detailed descriptions, availability, and pricing, forming the foundation for bookings.
+
+**📅 Booking System**
+Enables guests to reserve properties and manage their bookings.
+It tracks check-in/check-out dates, booking status, and ensures that properties are reserved without conflicts.
+
+**💳 Payment Processing**
+Handles transactions between guests and hosts.
+This feature ensures a smooth and secure payment experience, linking payments to bookings and updating statuses in real-time.
+
+**✍️ Review System**
+Allows guests to leave feedback and ratings after their stay.
+It helps build trust on the platform by giving future guests insight into the quality of properties and hosts.
+
+**📄 API Documentation**
+Provides comprehensive documentation using the OpenAPI standard and GraphQL schema.
+This ensures developers can easily understand and integrate with the backend via REST or GraphQL interfaces.
+
+**🚀 Database Optimization**
+Implements indexing and caching strategies to boost performance.
+By reducing response times and server load, it supports a seamless user experience even as the data grows.
