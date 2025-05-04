@@ -182,37 +182,85 @@ Represents feedback given by a guest after a stay.
 
 ## `🧩 Feature Breakdown`
 
-**👤 User Management**
-
+**👤 User Management**<br>
 Handles user registration, login, and profile management.
 This feature ensures that users (both guests and hosts) can securely access the platform, manage their details, and perform actions relevant to their role.
 
-**🏠 Property Management**
-
+**🏠 Property Management**<br>
 Allows hosts to create, update, retrieve, and delete property listings.
 This feature makes it possible for users to showcase rental properties with detailed descriptions, availability, and pricing, forming the foundation for bookings.
 
-**📅 Booking System**
-
+**📅 Booking System**<br>
 Enables guests to reserve properties and manage their bookings.
 It tracks check-in/check-out dates, booking status, and ensures that properties are reserved without conflicts.
 
-**💳 Payment Processing**
-
+**💳 Payment Processing**<br>
 Handles transactions between guests and hosts.
 This feature ensures a smooth and secure payment experience, linking payments to bookings and updating statuses in real-time.
 
-**✍️ Review System**
-
+**✍️ Review System**<br>
 Allows guests to leave feedback and ratings after their stay.
 It helps build trust on the platform by giving future guests insight into the quality of properties and hosts.
 
-**📄 API Documentation**
-
+**📄 API Documentation**<br>
 Provides comprehensive documentation using the OpenAPI standard and GraphQL schema.
 This ensures developers can easily understand and integrate with the backend via REST or GraphQL interfaces.
 
-**🚀 Database Optimization**
-
+**🚀 Database Optimization**<br>
 Implements indexing and caching strategies to boost performance.
 By reducing response times and server load, it supports a seamless user experience even as the data grows.
+
+---
+---
+
+## `🔐 API Security`
+
+Security is at the heart of any system that handles sensitive user data, financial transactions, and personal content. This backend implements multiple layers of protection to ensure integrity, confidentiality, and trust.
+
+---
+
+### ✅ **Authentication**
+
+All endpoints are protected with **token-based authentication** (e.g., JWT).
+This ensures that only registered and verified users can access restricted resources like bookings or payment history.
+
+> 🔒 *Why it matters:* Authentication keeps user accounts safe from unauthorized access and impersonation.
+
+---
+
+### 🔒 **Authorization**
+
+The system enforces **role-based access control (RBAC)** to define what each user type (guest, host, admin) can and cannot do.
+For example, only property owners can edit their listings, and only authenticated guests can make bookings.
+
+> 🚫 *Why it matters:* Authorization prevents data tampering and ensures users only interact with resources they own or are permitted to access.
+
+---
+
+### 🚦 **Rate Limiting**
+
+To prevent abuse and brute-force attacks, the API enforces **rate limits** per IP/user.
+This limits how many times an endpoint can be accessed within a given timeframe.
+
+> 🛡️ *Why it matters:* Rate limiting defends against denial-of-service attacks and keeps system performance stable.
+
+---
+
+### 🔑 **Secure Data Transmission**
+
+All data exchanged between clients and the backend is encrypted using **HTTPS**.
+Tokens, passwords, and personal data are never sent or stored in plain text.
+
+> 🧬 *Why it matters:* Encryption ensures sensitive data like login credentials and credit card info can’t be intercepted.
+
+---
+
+### 🧽 **Input Validation & Sanitization**
+
+All input is strictly validated and sanitized to prevent **SQL injection, XSS, and other injection attacks**.
+This includes type checking, field restrictions, and escaping user inputs.
+
+> 🧼 *Why it matters:* Proper validation stops attackers from injecting malicious code into the system.
+
+---
+---
